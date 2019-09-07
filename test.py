@@ -5,5 +5,3 @@ soup = bs4.BeautifulSoup(res,'html.parser')
 for i in soup.find_all('p'):
     for j in i.find_all('span',class_='four'):
         print(i.text)
-
-input('Press any key to exit')
